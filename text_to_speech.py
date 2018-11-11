@@ -28,13 +28,14 @@ def circle(radius,color,color1):
     turtle.end_fill()
     return  
 
+'''
 def normalcircle(radius,color):   
     x = color
     #y = color1
-    turtle.up()
+    ##turtle.up()
     # go to (0, radius)
-    turtle.goto(0,radius)
-    turtle.down()    
+    ##turtle.goto(0,radius)
+    ##turtle.down()    
     turtle.color(x)
     #turtle.begin_fill()
     # number of times the y axis has been crossed
@@ -54,9 +55,10 @@ def normalcircle(radius,color):
         x_sign = x_sign_new
     #turtle.end_fill()
     return  
+'''
 
 
-
+'''
 def square1(dim,color,color1):
     x = color
     z = color1 # this refers to the color that is filled in the middle
@@ -73,6 +75,7 @@ def square1(dim,color,color1):
    # turtle.left(90)
     turtle.end_fill()
     return
+'''
 
 def rectangle1(dim1,dim2,color,color1):
     x = color
@@ -84,10 +87,6 @@ def rectangle1(dim1,dim2,color,color1):
         turtle.left(90)
         turtle.forward(dim2)
         turtle.left(90)
-    #turtle.forward(dim1)
-    #turtle.left(90)
-    #turtle.forward(dim2)
-    #turtle.left(90)
     turtle.end_fill()
     return    
     
@@ -104,7 +103,18 @@ def star(color,color1):
             break
     turtle.end_fill()
     turtle.done()
+    
+def design():   # needs to be worked on and checked
+    #painter = turtle.Turtle()
+    turtle.color("red")
+    for i in range(50):
+        turtle.forward(100)
+        turtle.left(123)
+    
+    turtle.done()
+    
 
+'''
 def triangle(color,color1): # equilateral
     x = color
     z = color1 # this refers to the color that is filled in the middle
@@ -118,8 +128,24 @@ def triangle(color,color1): # equilateral
             break
     turtle.end_fill()
     turtle.done()
+'''
+
     
-def starcircle(color,color1):
+def polygon(n,length,color,color1):
+    x = color
+    z = color1 # this refers to the color that is filled in the middle
+    turtle.color(x,z)
+    turtle.begin_fill()
+    edges = n
+    length1 = length
+    angle = 360.0 / edges
+    for i in range(n):
+        turtle.forward(length1)
+        turtle.right(angle)
+    turtle.end_fill()
+    turtle.done()
+    
+def starcircle(color,color1):  # needs to be worked on and checked
     x = color
     z = color1 # this refers to the color that is filled in the middle
     turtle.color(x,z)
@@ -131,9 +157,14 @@ def starcircle(color,color1):
         if abs(turtle.pos()) < 1:
             break
     turtle.end_fill()
-    turtle.left(90)
-    turtle.forward(100)
-    normalcircle(100,y)
+    myTurtle = turtle.Turtle()
+    turtle.goto(0,radius)
+    #turtle.right(90)
+    #turtle.forward(100)
+    #turtle.right(90)
+    #turtle.forward(100)
+    myTurtle.circle(100)
+    ##normalcircle(100,y)
     turtle.done()
 
 
