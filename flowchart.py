@@ -4,6 +4,11 @@ Created on Tue Nov 13 21:55:12 2018
 
 @author: VYBHAV JAIN
 """
+
+# shapes needed: oval,rectangle,rhombus
+# logic to check: arrowmark 
+# predefined sizes and fit words into correct sizes
+
 import turtle 
 
 def flatoval(r):               # Horizontal Oval
