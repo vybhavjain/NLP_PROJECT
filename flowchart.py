@@ -1,14 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 15 14:33:41 2018
-
-@author: VYBHAV JAIN
-"""
-
-# shapes needed: oval,rectangle,rhombus
-# logic to check: arrowmark 
-# predefined sizes and fit words into correct sizes
-
 import turtle 
 
 def flatoval(r):               # Horizontal Oval
@@ -18,42 +7,47 @@ def flatoval(r):               # Horizontal Oval
         turtle.circle(r/2,90)
         
 def rectangle():
-    turtle.down()
-    turtle.forward(200)
-    turtle.left(90)
-    turtle.forward(20)
-    turtle.left(90)
-    turtle.forward(200)
-    turtle.left(90)
-    turtle.forward(20)
-    turtle.left(90)
-    #turtle.right(20)
-    #turtle.forward(20)
+	turtle.down()    
+    for i in range(2):
+        turtle.forward(200)
+        turtle.left(90)
+        turtle.forward(20)
+        turtle.left(90)
 
-# def flowchart(x): # function that takes as input strong to display in the flowchart 
-turtle.setpos(0,60)
-flatoval(25)
-turtle.write("Start")
+def start():
+    turtle.setpos(0,60)
+    flatoval(25)
+    turtle.write("Start")
 
-turtle.left(45)
-turtle.setpos(0,0)
-#turtle.setpos(-60,0)
-rectangle()
-turtle.write("1.Receive 2 numbers from the user")
-turtle.setpos(0,-20)
+def stop():
+	turtle.setpos(0,-180)
+    flatoval(25)
+    turtle.write("Stop")
 
+    
+def flowchart(x):
 
-turtle.setpos(0,-60)
-rectangle()
-turtle.write("2.Add both the numbers")
+    start()   # function to print the start inside the oval
 
-turtle.setpos(0,-120)
-rectangle()
-turtle.write("3.Display the result")
+    turtle.left(45)
+    turtle.setpos(0,0)
+    #turtle.setpos(-60,0)
+    rectangle()
+    turtle.write("1.Receive 2 numbers from the user")
+    turtle.setpos(0,-20)
+    turtle.setpos(0,-60)
+    rectangle()
+    y = ‘2.’ + x + ‘ both the numbers’ # need to check if this working 
+    turtle.write(y)
+    turtle.setpos(0,-120)
+    rectangle()
+    turtle.write("3.Display the result")
 
-turtle.setpos(0,-180)
-flatoval(25)
-turtle.write("Stop")
+    stop()  # function to print inside oval stop
 
+print(“enter one of the following operations to perform on two numbers ”)
+#print(“ Add , subtract ,multiply , divide”)
+x = raw_input(“Add , subtract ,multiply , divide”
+flowchart(x)
 
 
