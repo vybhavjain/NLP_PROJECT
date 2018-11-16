@@ -30,6 +30,7 @@ def rectangle():
     #turtle.right(20)
     #turtle.forward(20)
 
+# def flowchart(x): # function that takes as input strong to display in the flowchart 
 turtle.setpos(0,60)
 flatoval(25)
 turtle.write("Start")
