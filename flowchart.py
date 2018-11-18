@@ -6,7 +6,7 @@ def flatoval(r):               # Horizontal Oval
         turtle.circle(r,90)
         turtle.circle(r/2,90)
         
-def rectangle():
+def rectangle():  # has some issue with indentation , need to fix
 	turtle.down()    
     for i in range(2):
         turtle.forward(200)
