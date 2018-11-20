@@ -6,24 +6,23 @@ def flatoval(r):               # Horizontal Oval
         turtle.circle(r,90)
         turtle.circle(r/2,90)
         
-def rectangle():  # has some issue with indentation , need to fix
-	turtle.down()    
-    for i in range(2):
-        turtle.forward(200)
-        turtle.left(90)
-        turtle.forward(20)
-        turtle.left(90)
-
 def start():
     turtle.setpos(0,60)
     flatoval(25)
     turtle.write("Start")
 
 def stop():
-	turtle.setpos(0,-180)
-    flatoval(25)
-    turtle.write("Stop")
+   turtle.setpos(0,-180)
+   flatoval(25)
+   turtle.write("Stop")
 
+def rectangle(): 
+   turtle.down()    
+   for i in range(2):
+        turtle.forward(200)
+        turtle.left(90)
+        turtle.forward(20)
+        turtle.left(90)
     
 def flowchart(x):
 
@@ -37,7 +36,7 @@ def flowchart(x):
     turtle.setpos(0,-20)
     turtle.setpos(0,-60)
     rectangle()
-    y = ‘2.’ + x + ‘ both the numbers’ # need to check if this working 
+    y = "2." + x + " both the numbers" # need to check if this working 
     turtle.write(y)
     turtle.setpos(0,-120)
     rectangle()
@@ -45,9 +44,9 @@ def flowchart(x):
 
     stop()  # function to print inside oval stop
 
-print(“enter one of the following operations to perform on two numbers ”)
+print('enter one of the following operations to perform on two numbers')
 #print(“ Add , subtract ,multiply , divide”)
-x = raw_input(“Add , subtract ,multiply , divide”
+x = input('Add, subtract ,multiply,divide')
 flowchart(x)
 
 
