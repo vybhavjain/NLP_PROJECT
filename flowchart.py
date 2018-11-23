@@ -1,3 +1,7 @@
+# try if condition , rhombus for an example
+# make neater
+# try arranging in centre
+
 import turtle 
 
 def flatoval(r):               # Horizontal Oval
