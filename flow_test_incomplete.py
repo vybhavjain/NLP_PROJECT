@@ -1,7 +1,3 @@
-# try if condition , rhombus for an example
-# make neater
-# try arranging in centre
-
 import turtle 
 
 def flatoval(r):               # Horizontal Oval
@@ -22,16 +18,14 @@ def start():
     #turtle.circle(25/2,90)
 
 def stop():
-   turtle.setpos(0,-167.5)
-   turtle.penup()   # makes pen disappear in the current block only
+   turtle.setpos(0,-162.5)
+   turtle.penup()   
    turtle.setpos(0,-180)
    turtle.pendown()   
    flatoval(25)
    turtle.write("Stop")
 
 def rectangle(x,y): 
-   #turtle.down()    
-   #for i in range(2):
         turtle.forward(y)
         turtle.left(90)
         turtle.forward(20)
@@ -42,6 +36,18 @@ def rectangle(x,y):
         turtle.left(90)
         turtle.write(x)
         turtle.forward(y)
+        
+def parallelogram(x,y): 
+        turtle.forward(y+10)
+        turtle.left(70)
+        turtle.forward(20)
+        turtle.left(110)
+        turtle.forward(2*y)
+        turtle.left(70)
+        turtle.forward(20)
+        turtle.left(110)
+        turtle.write(x)
+        turtle.forward(y-10)
     
 def flowchart(x):
 
@@ -54,16 +60,14 @@ def flowchart(x):
     turtle.setpos(0,0)
     turtle.pendown()
     #turtle.setpos(-60,0)
-    rectangle(" 1.Receive 2 numbers from the user",90)
-    #turtle.write("1.Receive 2 numbers from the user")
-    #turtle.setpos(0,-20)
+    parallelogram("  1.Get a and b",40)
     turtle.setpos(0,-40)
-    turtle.penup()   # makes pen disappear in the current block only
+    turtle.penup()   
     turtle.setpos(0,-60)
     turtle.pendown()
     #turtle.setpos(0,-60)
     #rectangle()
-    y = " 2." + x + " both the numbers" # need to check if this working 
+    y = " 2." + x + " both the numbers"
     #turtle.write(y)
     rectangle(y,60)
     turtle.setpos(0,-100)
@@ -71,14 +75,14 @@ def flowchart(x):
     turtle.setpos(0,-120)
     turtle.pendown()
     #turtle.setpos(0,-120)
-    rectangle(" 3.Display the result",50)
+    parallelogram("  3.Display the result",50)
     #turtle.write("3.Display the result")
 
     stop()  # function to print inside oval stop
     turtle.done()
 
 print('enter one of the following operations to perform on two numbers')
-#print(“ Add , subtract ,multiply , divide”)
-#x = input('Add, subtract ,multiply,divide')
-flowchart('add')
+print(' Add , subtract ,multiply , divide')
+x = input('Add, subtract ,multiply,divide')
+flowchart(x)
 
