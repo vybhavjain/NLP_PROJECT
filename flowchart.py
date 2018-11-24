@@ -35,7 +35,7 @@ def rectangle(x,y):
         turtle.forward(y)
         
 def parallelogram(x,y): 
-        turtle.forward(y+10)
+        turtle.forward(y+5)
         turtle.left(70)
         turtle.forward(20)
         turtle.left(110)
@@ -44,7 +44,7 @@ def parallelogram(x,y):
         turtle.forward(20)
         turtle.left(110)
         turtle.write(x)
-        turtle.forward(y-10)
+        turtle.forward(y-5)
     
 def flowchart(x):
 
