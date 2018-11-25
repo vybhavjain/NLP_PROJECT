@@ -1,15 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Nov 25 15:21:23 2018
-
-@author: VYBHAV JAIN
-"""
-
 import turtle 
 
 def flatoval(r):               # Horizontal Oval
     turtle.right(45)
-    #turtle.write("Start")
     for loop in range(2):
         turtle.circle(r,90)
         turtle.circle(r/2,90)
@@ -22,8 +14,6 @@ def start():
     flatoval(25)
 
 def stop():
-   #turtle.setpos()
-   #turtle.setpos(0,-200)
    turtle.penup()   
    turtle.setpos(0,-220)
    turtle.pendown()   
@@ -74,7 +64,6 @@ def flowchart1():
     turtle.penup()   # makes pen disappear in the current block only
     turtle.setpos(0,0)
     turtle.pendown()
-    #turtle.setpos(-60,0)
     parallelogram("  Get a and b",40)
     turtle.setpos(0,-40)
     rhombus(60)
@@ -91,7 +80,6 @@ def flowchart1():
     turtle.right(90)
     turtle.forward(60)
     turtle.penup()   
-    #turtle.setpos(0,-180)
     turtle.forward(20)
     turtle.pendown()
     turtle.left(90)
@@ -114,7 +102,6 @@ def flowchart1():
     turtle.left(90)
     turtle.forward(60)
     turtle.penup()   
-    #turtle.setpos(0,-180)
     turtle.forward(20)
     turtle.pendown()
     turtle.left(90)
@@ -124,21 +111,8 @@ def flowchart1():
     turtle.left(90)
     #turtle.setpos(0,-220)
     turtle.forward(105) 
-    
-    
+        
     stop()  # function to print inside oval stop
-
-    
-    '''
-    turtle.setpos(0,-100)
-    turtle.penup()   # makes pen disappear in the current block only
-    turtle.setpos(0,-120)
-    turtle.pendown()
-    #turtle.setpos(0,-120)
-    parallelogram("  Display the result",50)
-    
-    stop()  # function to print inside oval stop
-    '''
     turtle.done()
 
 #print('enter one of the following operations to perform on two numbers')
