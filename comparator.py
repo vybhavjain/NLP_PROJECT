@@ -22,9 +22,10 @@ def start():
     flatoval(25)
 
 def stop():
-   turtle.setpos(0,-162.5)
+   #turtle.setpos()
+   #turtle.setpos(0,-200)
    turtle.penup()   
-   turtle.setpos(0,-180)
+   turtle.setpos(0,-220)
    turtle.pendown()   
    flatoval(25)
    turtle.write("Stop")
@@ -77,6 +78,8 @@ def flowchart1():
     parallelogram("  Get a and b",40)
     turtle.setpos(0,-40)
     rhombus(60)
+    
+    
     turtle.penup()   
     turtle.setpos(0,-40)
     turtle.pendown()
@@ -93,7 +96,39 @@ def flowchart1():
     turtle.pendown()
     turtle.left(90)
     parallelogram("  display a ",30)
+    turtle.right(90)
+    turtle.forward(55)
+    turtle.right(90)
+    #turtle.setpos(0,-220)
+    turtle.forward(75) 
+    turtle.left(180)
+    
+    turtle.penup()   
+    turtle.setpos(0,-40)
+    turtle.pendown()
+    turtle.right(135)
+    turtle.forward(60)
+    turtle.right(45)
+    turtle.forward(70)
+    turtle.write('no')
+    turtle.left(90)
+    turtle.forward(60)
+    turtle.penup()   
+    #turtle.setpos(0,-180)
+    turtle.forward(20)
+    turtle.pendown()
+    turtle.left(90)
+    parallelogram("  display b ",30)
+    turtle.right(90)
+    turtle.forward(55)
+    turtle.left(90)
+    #turtle.setpos(0,-220)
+    turtle.forward(105) 
+    
+    
+    stop()  # function to print inside oval stop
 
+    
     '''
     turtle.setpos(0,-100)
     turtle.penup()   # makes pen disappear in the current block only
