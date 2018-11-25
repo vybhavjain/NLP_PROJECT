@@ -55,18 +55,13 @@ def parallelogram(x,y):
         
 def rhombus(x):
     turtle.right(45)
-    for i in range(3):
+    for i in range(4):
         turtle.forward(x)
         turtle.right(90)
-    x = []
-    x = turtle.position()
     turtle.penup()   
-    turtle.setpos(x[1],x[2]+5)
+    turtle.setpos(-25,-80)
     turtle.pendown()
-    turtle.write('wassup')
-    turtle.forward(x)
-    turtle.right(90)
-    
+    turtle.write('is a>b?')
     
     
 def flowchart1():
@@ -81,14 +76,24 @@ def flowchart1():
     #turtle.setpos(-60,0)
     parallelogram("  Get a and b",40)
     turtle.setpos(0,-40)
-    #turtle.penup()   
-    #turtle.setpos(0,-60)
-    #turtle.pendown()
-    #y =  x + " a and b "
-    #turtle.write(y)
-    #rectangle('',50)
-    #turtle.right(45)
-    rhombus(40)
+    rhombus(60)
+    turtle.penup()   
+    turtle.setpos(0,-40)
+    turtle.pendown()
+    turtle.forward(60)
+    #turtle.right(90) 
+    turtle.left(45)
+    turtle.forward(70)
+    turtle.write('yes')
+    turtle.right(90)
+    turtle.forward(60)
+    turtle.penup()   
+    #turtle.setpos(0,-180)
+    turtle.forward(20)
+    turtle.pendown()
+    turtle.left(90)
+    parallelogram("  display a ",30)
+
     '''
     turtle.setpos(0,-100)
     turtle.penup()   # makes pen disappear in the current block only
@@ -105,12 +110,3 @@ def flowchart1():
 #print(' Add , subtract ,multiply , divide')
 #x = input('Add, subtract ,multiply,divide')
 flowchart1()
-
-'''
-import turtle
-turtle.forward(20)
-x = []
-x = turtle.position()
-print (x)
-turtle.done()
-'''
