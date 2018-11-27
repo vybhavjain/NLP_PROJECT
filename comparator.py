@@ -5,7 +5,15 @@ def flatoval(r):               # Horizontal Oval
     for loop in range(2):
         turtle.circle(r,90)
         turtle.circle(r/2,90)
-        
+
+def arrow :
+    turtle.left(45)
+    turtle.forward(15)
+    turtle.right(90)
+    turtle.forward(15)
+    turtle.left(45)
+
+
 def start():
     turtle.penup()   # makes pen disappear in the current block only
     turtle.setpos(0,60)
