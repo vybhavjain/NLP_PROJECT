@@ -5,11 +5,15 @@ def flatoval(r):               # Horizontal Oval
     for loop in range(2):
         turtle.circle(r,90)
         turtle.circle(r/2,90)
-
-def arrow :
-    turtle.left(45)
+import turtle
+def arrow():
+    turtle.left(135)
+    turtle.forward(15)
+    turtle.right(180)
     turtle.forward(15)
     turtle.right(90)
+    turtle.forward(15)
+    turtle.right(180)
     turtle.forward(15)
     turtle.left(45)
 
@@ -74,6 +78,9 @@ def flowchart1():
     turtle.pendown()
     parallelogram("  Get a and b",40)
     turtle.setpos(0,-40)
+    turtle.right(90)
+    arrow()
+    #turtle.left(90)
     rhombus(60)
     
     
