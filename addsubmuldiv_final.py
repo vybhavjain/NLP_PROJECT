@@ -11,7 +11,7 @@ def flatoval(r):               # Horizontal Oval
     turtle.penup()   # makes pen disappear in the current block only
     turtle.setpos(-(r/1.414),60+(r/1.414))
     turtle.pendown()
-    turtle.write("Start")
+    turtle.write("  Start")
     turtle.right(45)
     for loop in range(2):
         turtle.circle(r,90)
@@ -55,7 +55,7 @@ def stop():
    turtle.setpos(0,-180)
    turtle.pendown()   
    flatoval1(25)
-   turtle.write("Stop")
+   turtle.write("  Stop")
 
 
 def arrow():
@@ -105,7 +105,7 @@ def flowchart(x):
     turtle.setpos(0,0)
     turtle.pendown()
     #turtle.setpos(-60,0)
-    parallelogram("  Get a and b",40)
+    parallelogram("     Get a and b",40)
     turtle.setpos(0,-40)
     arrow()    
     turtle.penup()   
@@ -113,17 +113,17 @@ def flowchart(x):
     turtle.pendown()
     #turtle.setpos(0,-60)
     #rectangle()
-    y =  x + " a and b "
+    y = '  ' + x + " a and b "
     
     #turtle.write(y)
-    rectangle(y,50)
+    rectangle(y,45)
     turtle.setpos(0,-100)
     arrow()
     turtle.penup()   # makes pen disappear in the current block only
     turtle.setpos(0,-120)
     turtle.pendown()
     #turtle.setpos(0,-120)
-    parallelogram("  Display the result",50)
+    parallelogram("    Display the result",50)
     #turtle.write("3.Display the result")
 
     stop()  # function to print inside oval stop
