@@ -94,12 +94,10 @@ def flowchart1():
 
     start()   # function to print the start inside the oval
 
-    #turtle.left(45)
     turtle.penup()   # makes pen disappear in the current block only
     turtle.setpos(0,20)
     turtle.pendown()
 
-    #turtle.right(90)
     arrow()
     #turtle.left(90)
     turtle.penup()   # makes pen disappear in the current block only
@@ -170,6 +168,7 @@ def flowchart1():
     turtle.right(90)
         
     stop()  # function to print inside oval stop
+    turtle.hideturtle()
     turtle.done()
 
 #print('enter one of the following operations to perform on two numbers')
