@@ -4,7 +4,7 @@ def flatoval(r):               # Horizontal Oval
     turtle.penup()   # makes pen disappear in the current block only
     turtle.setpos(-(r/1.414),60+(r/1.414))
     turtle.pendown()
-    turtle.write("Start")
+    turtle.write("  Start")
     turtle.right(45)
     for loop in range(2):
         turtle.circle(r,90)
@@ -50,10 +50,10 @@ def start():
 
 def stop():
    turtle.penup()   
-   turtle.setpos(0,-220)
+   turtle.setpos(-10,-220)
    turtle.pendown()   
    flatoval1(25)
-   turtle.write("Stop")
+   turtle.write("  Stop")
 
 def rectangle(x,y): 
         turtle.forward(y)
@@ -85,9 +85,9 @@ def rhombus(x):
         turtle.forward(x)
         turtle.right(90)
     turtle.penup()   
-    turtle.setpos(-25,-80)
+    turtle.setpos(-30,-90)
     turtle.pendown()
-    turtle.write('is a>b?')
+    turtle.write('    is a>b?')
     
     
 def flowchart1():
@@ -103,7 +103,7 @@ def flowchart1():
     turtle.penup()   # makes pen disappear in the current block only
     turtle.setpos(0,0)
     turtle.pendown()
-    parallelogram("  Get a and b",40)
+    parallelogram("    Get a and b",40)
     turtle.setpos(0,-40)
     #turtle.right(90)
     arrow()
@@ -128,12 +128,12 @@ def flowchart1():
     turtle.forward(20)
     turtle.pendown()
     turtle.left(90)
-    parallelogram("  display a ",30)
+    parallelogram("    display a ",30)
     turtle.right(90)
     turtle.forward(55)
     turtle.right(90)
     #turtle.setpos(0,-220)
-    turtle.forward(75) 
+    turtle.forward(85) 
     turtle.left(180)
 
     turtle.right(90)
@@ -157,12 +157,12 @@ def flowchart1():
     turtle.forward(20)
     turtle.pendown()
     turtle.left(90)
-    parallelogram("  display b ",30)
+    parallelogram("    display b ",30)
     turtle.right(90)
     turtle.forward(55)
     turtle.left(90)
     #turtle.setpos(0,-220)
-    turtle.forward(110) 
+    turtle.forward(100) 
     turtle.left(90)
     arrow()
     turtle.right(90)
