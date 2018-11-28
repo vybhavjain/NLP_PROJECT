@@ -5,18 +5,31 @@ def flatoval(r):               # Horizontal Oval
     for loop in range(2):
         turtle.circle(r,90)
         turtle.circle(r/2,90)
+    turtle.circle(r,45)
+    #turtle.forward(40)
+    turtle.right(90)
+    turtle.forward(40)
+    turtle.right(180)
+    turtle.forward(40)
+    turtle.right(90)
+    turtle.circle(r,45)
+    turtle.circle(r/2,90)
+    turtle.circle(r,90)
+    turtle.circle(r/2,90)
+
 import turtle
+
 def arrow():
     turtle.left(135)
     turtle.forward(15)
     turtle.right(180)
     turtle.forward(15)
-    turtle.right(90)
+    turtle.left(90)
     turtle.forward(15)
     turtle.right(180)
     turtle.forward(15)
-    turtle.left(45)
-
+    turtle.right(45)
+    turtle.right(180)
 
 def start():
     turtle.penup()   # makes pen disappear in the current block only
@@ -73,12 +86,15 @@ def flowchart1():
 
     turtle.left(45)
     turtle.setpos(0,20)
+    #turtle.right(90)
+    arrow()
+    #turtle.left(90)
     turtle.penup()   # makes pen disappear in the current block only
     turtle.setpos(0,0)
     turtle.pendown()
     parallelogram("  Get a and b",40)
     turtle.setpos(0,-40)
-    turtle.right(90)
+    #turtle.right(90)
     arrow()
     #turtle.left(90)
     rhombus(60)
@@ -94,6 +110,9 @@ def flowchart1():
     turtle.write('yes')
     turtle.right(90)
     turtle.forward(60)
+    turtle.left(90)
+    arrow()
+    turtle.right(90)
     turtle.penup()   
     turtle.forward(20)
     turtle.pendown()
@@ -105,6 +124,10 @@ def flowchart1():
     #turtle.setpos(0,-220)
     turtle.forward(75) 
     turtle.left(180)
+
+    turtle.right(90)
+    arrow()
+    turtle.left(90)
     
     turtle.penup()   
     turtle.setpos(0,-40)
@@ -116,6 +139,9 @@ def flowchart1():
     turtle.write('no')
     turtle.left(90)
     turtle.forward(60)
+    turtle.left(90)
+    arrow()
+    turtle.right(90)
     turtle.penup()   
     turtle.forward(20)
     turtle.pendown()
@@ -126,6 +152,9 @@ def flowchart1():
     turtle.left(90)
     #turtle.setpos(0,-220)
     turtle.forward(105) 
+    turtle.left(90)
+    arrow()
+    turtle.right(90)
         
     stop()  # function to print inside oval stop
     turtle.done()
