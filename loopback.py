@@ -11,7 +11,7 @@ def flatoval(r):               # Horizontal Oval
     turtle.penup()   # makes pen disappear in the current block only
     turtle.setpos(-(r/1.414),120+(r/1.414))
     turtle.pendown()
-    turtle.write("Start")
+    turtle.write("  Start")
     turtle.right(45)
     for loop in range(2):
         turtle.circle(r,90)
@@ -33,9 +33,14 @@ def flatoval(r):               # Horizontal Oval
 def flatoval1(r):               # Horizontal Oval
     turtle.right(45)
     turtle.penup()   # makes pen disappear in the current block only
-    turtle.setpos(-(r/1.414),-(162.5+(r/1.414)))
+    turtle.setpos(-(r/1.414),-(210+(r/1.414)))
     turtle.pendown()
 
+    #turtle.write("Start")
+    for loop in range(2):
+        turtle.circle(r,90)
+        turtle.circle(r/2,90)    
+        
 def arrow():
     turtle.left(135)
     turtle.forward(15)
@@ -56,13 +61,13 @@ def start():
     flatoval(25)
 
 def stop():
-   turtle.setpos(0,-155)
-   arrow()
+   #turtle.setpos(0,-155)
+   #arrow()
    turtle.penup()   
    turtle.setpos(0,-180)
    turtle.pendown()   
    flatoval1(25)
-   turtle.write("Stop")
+   turtle.write("  Stop")
 
 def rectangle(x,y): 
         turtle.forward(y)
@@ -146,70 +151,43 @@ def flowchart1():
     turtle.left(90)
     arrow()
     turtle.right(90)
-    #turtle.hideturtle()
 
-    
-    
-    '''
-    turtle.penup()   
-    turtle.setpos(0,-40)
+    # loopback is over
+   
+    turtle.penup()   # makes pen disappear in the current block only
+    turtle.setpos(-25,-110)
     turtle.pendown()
-    turtle.forward(60)
-    #turtle.right(90) 
-    turtle.left(45)
-    turtle.forward(70)
-    turtle.write('yes')
-    turtle.right(90)
-    turtle.forward(60)
-    turtle.left(90)
-    arrow()
-    turtle.right(90)
-    turtle.penup()   
-    turtle.forward(20)
+    turtle.write('Any more')
+    turtle.penup()   # makes pen disappear in the current block only
+    turtle.setpos(-35,-125)
     turtle.pendown()
-    turtle.left(90)
-    parallelogram("  display a ",30)
-    turtle.right(90)
-    turtle.forward(55)
-    turtle.right(90)
-    #turtle.setpos(0,-220)
-    turtle.forward(75) 
-    turtle.left(180)
-
-    turtle.right(90)
-    arrow()
-    turtle.left(90)
+    turtle.write('numbers left to')
+    turtle.penup()   # makes pen disappear in the current block only
+    turtle.setpos(-25,-140)
+    turtle.pendown()
+    turtle.write('     Add?')
     
-    turtle.penup()   
-    turtle.setpos(0,-40)
+    # end of rhombus condition
+    turtle.penup()   # makes pen disappear in the current block only
+    turtle.setpos(0,-70)
     turtle.pendown()
-    turtle.right(135)
-    turtle.forward(60)
+    
+    # switch to new location with required arrow
+    
     turtle.right(45)
     turtle.forward(70)
-    turtle.write('no')
-    turtle.left(90)
-    turtle.forward(60)
+    turtle.right(90)
+    turtle.forward(70)
+    turtle.left(45)
+    turtle.forward(25)
+    turtle.write('  No')
+    turtle.forward(10)
     turtle.left(90)
     arrow()
-    turtle.right(90)
-    turtle.penup()   
-    turtle.forward(20)
-    turtle.pendown()
-    turtle.left(90)
-    parallelogram("  display b ",30)
-    turtle.right(90)
-    turtle.forward(55)
-    turtle.left(90)
-    #turtle.setpos(0,-220)
-    turtle.forward(110) 
-    turtle.left(90)
-    arrow()
-    turtle.right(90)
-        
-    '''
-    #stop()  # function to print inside oval stop
-    #turtle.hideturtle()
+    
+    
+    stop()  # function to print inside oval stop
+    turtle.hideturtle()
     turtle.done()
 
 #print('enter one of the following operations to perform on two numbers')
