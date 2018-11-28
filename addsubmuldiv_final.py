@@ -32,6 +32,10 @@ def flatoval(r):               # Horizontal Oval
         
 def flatoval1(r):               # Horizontal Oval
     turtle.right(45)
+    turtle.penup()   # makes pen disappear in the current block only
+    turtle.setpos(-(r/1.414),-(162.5+(r/1.414)))
+    turtle.pendown()
+
     #turtle.write("Start")
     for loop in range(2):
         turtle.circle(r,90)
@@ -45,7 +49,8 @@ def start():
     flatoval(25)
 
 def stop():
-   turtle.setpos(0,-162.5)
+   turtle.setpos(0,-155)
+   arrow()
    turtle.penup()   
    turtle.setpos(0,-180)
    turtle.pendown()   
