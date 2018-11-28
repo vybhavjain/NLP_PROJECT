@@ -1,23 +1,33 @@
 import turtle 
 
 def flatoval(r):               # Horizontal Oval
+    turtle.penup()   # makes pen disappear in the current block only
+    turtle.setpos(-(r/1.414),60+(r/1.414))
+    turtle.pendown()
+    turtle.write("Start")
     turtle.right(45)
     for loop in range(2):
         turtle.circle(r,90)
         turtle.circle(r/2,90)
     turtle.circle(r,45)
-    #turtle.forward(40)
     turtle.right(90)
-    turtle.forward(40)
+    turtle.forward(50)
+    turtle.left(90)
+    '''
     turtle.right(180)
     turtle.forward(40)
-    turtle.right(90)
+    turtle.left
     turtle.circle(r,45)
     turtle.circle(r/2,90)
     turtle.circle(r,90)
     turtle.circle(r/2,90)
-
-import turtle
+    '''
+    
+def flatoval1(r):               # Horizontal Oval
+    turtle.right(45)
+    for loop in range(2):
+        turtle.circle(r,90)
+        turtle.circle(r/2,90)
 
 def arrow():
     turtle.left(135)
@@ -35,14 +45,14 @@ def start():
     turtle.penup()   # makes pen disappear in the current block only
     turtle.setpos(0,60)
     turtle.pendown()
-    turtle.write("Start")
+    #turtle.write("Start")
     flatoval(25)
 
 def stop():
    turtle.penup()   
    turtle.setpos(0,-220)
    turtle.pendown()   
-   flatoval(25)
+   flatoval1(25)
    turtle.write("Stop")
 
 def rectangle(x,y): 
@@ -84,8 +94,11 @@ def flowchart1():
 
     start()   # function to print the start inside the oval
 
-    turtle.left(45)
+    #turtle.left(45)
+    turtle.penup()   # makes pen disappear in the current block only
     turtle.setpos(0,20)
+    turtle.pendown()
+
     #turtle.right(90)
     arrow()
     #turtle.left(90)
@@ -151,7 +164,7 @@ def flowchart1():
     turtle.forward(55)
     turtle.left(90)
     #turtle.setpos(0,-220)
-    turtle.forward(105) 
+    turtle.forward(110) 
     turtle.left(90)
     arrow()
     turtle.right(90)
