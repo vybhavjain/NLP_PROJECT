@@ -25,7 +25,7 @@ def circle(radius):
             x_sign = x_sign_new
             return  
 
-
+'''
 def square1(dim):
         turtle.forward(dim)
         turtle.left(90)
@@ -36,6 +36,21 @@ def square1(dim):
         turtle.forward(dim)
         turtle.left(90)
         return
+'''    
+def square1(length,color):
+    n = 4
+    x = color
+    #z = color1 # this refers to the color that is filled in the middle
+    turtle.color('red',x)
+    turtle.begin_fill()
+    edges = n
+    length1 = length
+    angle = 360.0 / edges
+    for i in range(n):
+        turtle.forward(length1)
+        turtle.right(angle)
+    turtle.end_fill()
+    turtle.done()
 
 def rectangle1(dim):
         turtle.forward(dim)

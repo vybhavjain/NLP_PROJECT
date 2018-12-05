@@ -15,15 +15,7 @@ def flatoval(r):               # Horizontal Oval
     turtle.right(90)
     turtle.forward(50)
     turtle.left(90)
-    '''
-    turtle.right(180)
-    turtle.forward(40)
-    turtle.left
-    turtle.circle(r,45)
-    turtle.circle(r/2,90)
-    turtle.circle(r,90)
-    turtle.circle(r/2,90)
-    '''
+
         
 def flatoval1(r):               # Horizontal Oval
     turtle.right(45)

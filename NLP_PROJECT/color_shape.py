@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Dec  2 13:22:26 2018
-
-@author: Reshma
-"""
-
 import turtle
 import math
 
@@ -63,15 +56,14 @@ def star(color,color1,radius):
     turtle.done()
 
     
-def design():   # needs to be worked on and checked
-    #painter = turtle.Turtle()
-    turtle.color("red")
+def design(x):   
+    turtle.color(x)
     for i in range(50):
         turtle.forward(100)
         turtle.left(123)
-    
     turtle.done()
-    
+
+   
 def polygon(n,length,color,color1):
     x = color
     z = color1 # this refers to the color that is filled in the middle
@@ -86,6 +78,9 @@ def polygon(n,length,color,color1):
     turtle.end_fill()
     turtle.done()
     
+
+
+'''
 def starcircle(color,color1,radius):  # needs to be worked on and checked
     x = color
     z = color1 # this refers to the color that is filled in the middle
@@ -99,7 +94,7 @@ def starcircle(color,color1,radius):  # needs to be worked on and checked
             break
     turtle.end_fill()
     myTurtle = turtle.Turtle()
-    turtle.goto(0,radius)
+    turtle.goto(5,radius)
     #turtle.right(90)
     #turtle.forward(100)
     #turtle.right(90)
@@ -107,7 +102,8 @@ def starcircle(color,color1,radius):  # needs to be worked on and checked
     myTurtle.circle(100)
     ##normalcircle(100,y)
     turtle.done()
-
+starcircle('red','black',5)
+'''
 """
 y = 'blue'    # color to be passed 
 a = 'red'
